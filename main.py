@@ -231,7 +231,7 @@ while ch != 8:
     elif ch == '8':
         os.system("cls")
         
-        print("\n\n\t\tThanks for using bank managemnt system")
+        print("\n\n\t\tThanks for using banking managemnt system")
         print("\t\t=============@bagpallab7==============")
         time.sleep(3)
         break
