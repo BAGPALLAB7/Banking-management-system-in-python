@@ -2,7 +2,6 @@ import pickle
 import os
 import pathlib
 import time
-
 class Account :
     accNo = 0
     name = ''
@@ -53,12 +52,18 @@ def intro():
     print("\t\t\t\t**********************")
     print("\t\t\t\tBANK MANAGEMENT SYSTEM")
     print("\t\t\t\t**********************")
-    time.sleep(3)
-
+    time.sleep(.8)
+    text="Pallab Bag"
     print("\t\t\t========Design and created by:=========")
-    time.sleep(2)
-    print("\t\t\t\tPallab Bag (@bagpallab7)")
-    time.sleep(3)
+    time.sleep(.9)
+    print("\t\t\t\t",end="")
+    for i in text:
+        print(i,end="")
+        time.sleep(.5)
+    time.sleep(.8)
+    print("(@bagpallab7)")
+    #print("\t\t\t\tPallab Bag (@bagpallab7)")
+    time.sleep(4)
 
 
 
@@ -230,10 +235,9 @@ while ch != 8:
         modifyAccount(num)
     elif ch == '8':
         os.system("cls")
-        
-        print("\n\n\t\tThanks for using banking managemnt system")
+        print("\n\n\t\tThanks for using bank managemnt system")
         print("\t\t=============@bagpallab7==============")
-        time.sleep(3)
+        time.sleep(4)
         break
     else :
         print("Invalid choice!")
